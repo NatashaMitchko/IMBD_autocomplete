@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def show_dups(filename="movies.tsv"):
     df = pd.read_csv(filename, sep="\t")
     df_dups = df[df.duplicated(["primaryTitle"])]
