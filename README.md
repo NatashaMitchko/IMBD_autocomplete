@@ -2,6 +2,17 @@
 
 IMBD movie title autocomplete functionality. Given a prefix it will return you some movie suggestions.
 
+Testing for prefixes `A`, `The` & `Wh`
+```
+Movie: A
+['Arigo (2020)', 'Arising Circle (2020)', 'Arisen Revelations (2020)', 'Artist Police (2020)', 'Artificial Twins (2020)', 'Arthur Rambo (2020)', 'Art Explosion (2020)', 'Art Saved My Life - An Interview with Composer Orville Stoeber (2020)', 'Art Be Damned! (2020)', 'Art of the Fantastic: A Journey Into Creation (2020)']
+Movie: The
+['The Prom (2020)', 'The Promise of Perfume (2020)', 'The Protestants (2020)', 'The Protege (2020)', 'The Protectors (2020)', 'The Professionals (2020)', 'The Prophet and the Space Aliens (2020)', 'The Process (2020)', 'The Prodigal Cowboy (2020)', "The Prisoner's Dilemma (2020)"]
+Movie: Wh
+['Whatever It Takes The Movie: When Blood Runs Cold (2020)', 'What Do I Do Now? (2020)', "What Doesn't Float (2020)", 'What if it Was Me? (2020)', 'What if I Defect? (2020)', 'What Goes Around (2020)', 'What I Meant to Say Was... (2020)', 'What About the Box? (2020)', 'What About Love (2020)', 'What remains (2020)']
+Movie:
+```
+
 ## Quickstart
 > :warning: **Never unpickle an unknown pickle file**: Running these commands does JUST THAT!
 
