@@ -3,12 +3,12 @@ from trie_it_out import Trie, TrieNode
 import pickle
 
 
-def load_IMBD_trie(filename="pkl/IMBD_trie.pkl"):
+def load_IMBD_trie(filename="pkl/sample/IMBD_trie.pkl"):
     with open(filename, "rb") as f:
         return pickle.load(f)
 
 
-def load_lookup(filename="pkl/IMBD_lookup.pkl"):
+def load_lookup(filename="pkl/sample/IMBD_lookup.pkl"):
     with open(filename, "rb") as f:
         return pickle.load(f)
 
