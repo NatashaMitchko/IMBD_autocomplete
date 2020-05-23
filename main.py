@@ -1,5 +1,5 @@
 import pandas as pd
-from trie_it_out import Trie, TrieNode
+from trie import Trie, TrieNode
 import pickle
 
 
