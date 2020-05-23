@@ -3,3 +3,4 @@ env/
 title.basics.tsv
 movies.tsv
 movies_only.tsv
+__pycache__/

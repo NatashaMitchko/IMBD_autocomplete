@@ -3,7 +3,9 @@ import pickle
 from time import perf_counter as pc
 
 df = pd.read_csv(
-    "movies_only.tsv", sep="\t", usecols=["tconst", "primaryTitle", "startYear"]
+    "movies_only.tsv",
+    sep="\t",
+    usecols=["tconst", "primaryTitle", "startYear"],
 )
 
 t0 = pc()
