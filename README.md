@@ -2,6 +2,21 @@
 
 IMBD movie title autocomplete functionality. Given a prefix it will return you some movie suggestions.
 
+## Quickstart
+> :warning: **Never unpickle an unknown pickle file**: Running these commands does JUST THAT!
+
+Make sure you're using Python >=3.6 - it's 2020, let's get it together.
+Install packages:
+```
+python3 -m pip install pandas
+```
+Run the program:
+```
+python3 main.py
+```
+
+## Additional Info
+
 Movie titles stored in a trie that can be found in `pkl/IMBD_lookup.pkl` The values in the trie are NOT normalized - i.e. I did not run `title.lower()`. This makes getting suggestions case sensitive. (TODO: fix this).
 
 > :warning: **Never unpickle an unknown pickle file**: Be very careful here!
@@ -16,3 +31,4 @@ Once you have the id you can then use it to generate a more descriptive suggesti
 > :warning: **Never unpickle an unknown pickle file**: You don't want to catch a computer virus!
 
 `main.py` loads up the trie and the lookup table and then puts the user in a loop. The user is prompted to give a Movie and suggestions are returned. To avoid a recursive nightmare, only 10 suggestions (roughly) are generated per lookup in the trie.
+
