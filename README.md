@@ -1,5 +1,9 @@
 # IMBD Autocomplete
 
+- [Quickstart](#quickstart)
+- [Additional Info](#additional-info)
+- [Note to self](#note-to-self)
+
 IMBD movie title autocomplete functionality. Given a prefix it will return you some movie suggestions.
 
 Testing for prefixes `A`, `The` & `Wh`
@@ -43,3 +47,9 @@ Once you have the id you can then use it to generate a more descriptive suggesti
 
 `main.py` loads up the trie and the lookup table and then puts the user in a loop. The user is prompted to give a Movie and suggestions are returned. To avoid a recursive nightmare, only 10 suggestions (roughly) are generated per lookup in the trie.
 
+
+### Note to self
+The actual pkl file with the trie is too big to push to github. If you accidently commit it locally here is the command to remove it from the commit history:
+```
+git filter-branch --index-filter 'git rm --cached --ignore-unmatch <IMBD_trie.pkl>' HEAD
+```
