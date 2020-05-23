@@ -2,11 +2,11 @@ import pandas as pd
 import pickle
 from time import perf_counter as pc
 
-filename = "sample.tsv"
+filename = "tsv/sample.tsv"
 print(f"generating LUT for {filename}")
 
 df = pd.read_csv(
-    "sample.tsv",
+    filename,
     sep="\t",
     usecols=["tconst", "primaryTitle", "startYear"],
 )

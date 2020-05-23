@@ -1,4 +1,5 @@
 from trie import TrieNode, Trie, IMDB_trie_factory
+from time import perf_counter as pc
 
 if __name__ == "__main__":
     import pickle
